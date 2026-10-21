@@ -1,0 +1,6 @@
+auto close tag-jun jan
+Auto Import-steoates
+Better Comments-Aaron Bond
+ES7+ React/Redux/React-Native snippets-dsznajder
+ESLint-Microsoft(microsoft.com)
+Tailwind CSS IntelliSense-Tailwind Labs
