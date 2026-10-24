@@ -1,8 +1,9 @@
 import './App.css'
+import Card from './components/card'
 import TestComponent from './TestComponent'
 
 function App() {
-  return <TestComponent />
+  return <Card />
 }
 
 export default App
