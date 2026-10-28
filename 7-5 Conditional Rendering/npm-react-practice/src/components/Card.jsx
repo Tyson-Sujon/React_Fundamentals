@@ -1,4 +1,4 @@
-import './Card.css'
+import "./Card.css";
 
 // props = empty object ,ai code e ata function hisabe jai
 
@@ -15,17 +15,14 @@ import './Card.css'
 //     )
 // }
 
-
-
 //  conditional rendering block nea kaj hoisay if-else or ternary operation
 
-
 // export default function Card({name, age }) {
-//   // jodi kondition matro akta hoi 
+//   // jodi kondition matro akta hoi
 // if (age>20) {
 //   return <div className='card'>you are so young</div>
 // }
-  
+
 //   return (
 //     <div className="card">
 //       <h1>Hello There</h1>
@@ -35,21 +32,38 @@ import './Card.css'
 //   );
 // }
 
+// // akadhik condition er jonno ata app.jsx thakay dibe logical operator
 
-export default function Card({name, age }) {
-  // jodi kondition matro akta hoi 
-if (age>20) {
-  return <div className='card'>you are so young</div>
-}
-  
+export default function Card({ name, age }) {
+  // condition akter odhik hole
+
+//   return (
+//     <>
+//       {age > 18 && (
+//         <div className="card">
+//           <h1>Hello There</h1>
+//           <p>name={name}</p>
+//           <p>Age={age}</p>
+//         </div>
+//       )}
+//     </>
+//   );
+// }
+
+// if -else condition chara 'short cuircite' er jonno
+export default function Card({ name, age }) {
   return (
-    <div className="card">
-      <h1>Hello There</h1>
-      <p>name={name}</p>
-      <p>Age={age}</p>
-    </div>
+    <>
+      {age > 18 ? (
+        <div className="card">
+          <h1>Hello There</h1>
+          <p>name={name}</p>
+          <p>Age={age}</p>
+        </div>
+      ) : (
+        <div className="card">You are too young</div>
+      )}
+    </>
   );
 }
-
-
 // 5.30
